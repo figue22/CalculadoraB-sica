@@ -1,0 +1,114 @@
+/* Contenedor principal */
+.container {
+    width: 90%; /* Adaptamos el ancho al 90% para móviles */
+    max-width: 400px; /* Limitamos el tamaño máximo */
+    height: auto; /* Permitimos que la altura sea dinámica */
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 40px 10px;
+    background-color: #f0f0f0;
+    border-radius: 20px; /* Redondeamos un poco más para una mejor apariencia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+/* Pantalla */
+#pantalla {
+    width: 90%; /* Ajustamos el ancho al 90% */
+    height: 100px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2em; /* Reducimos tamaño para pantallas pequeñas */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+/* Botones */
+#botones {
+    width: 100%; /* Hacemos que ocupe todo el ancho */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se acomoden en filas */
+    justify-content: center; /* Centramos los botones */
+}
+
+/* Botones generales */
+.boton {
+    width: 60px; /* Un poco más grande para ser responsive */
+    height: 60px;
+    font-size: 1.2em; /* Ajustamos el tamaño de fuente */
+    margin: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none; /* Quitamos bordes para un aspecto más limpio */
+}
+
+/* Estilos para números */
+.numeros {
+    background-color: rgb(86, 86, 244);
+    border-color: transparent;
+}
+
+.numeros:hover {
+    background-color: rgb(71, 71, 219);
+}
+
+/* Estilos para operaciones */
+.operaciones {
+    background-color: rgb(255, 86, 86);
+    border-color: transparent;
+}
+
+.operaciones:hover {
+    background-color: rgb(219, 71, 71);
+}
+
+/* Botón de igual */
+#igual {
+    background-color: rgb(86, 255, 86);
+    border-color: transparent;
+}
+
+#igual:hover {
+    background-color: rgb(71, 183, 71);
+}
+
+/* Botón de punto */
+#punto {
+    background-color: rgb(91, 57, 240);
+    border-color: transparent;
+}
+
+#punto:hover {
+    background-color: rgb(74, 43, 209);
+}
+
+/* Botones de borrar y limpiar */
+#borrar, #limpiar {
+    background-color: rgb(178, 42, 223);
+    border-color: transparent;
+}
+
+#borrar:hover, #limpiar:hover {
+    background-color: rgb(153, 37, 193);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .boton {
+        width: 50px; /* Botones más pequeños en pantallas pequeñas */
+        height: 50px;
+        font-size: 1em; /* Reducimos el tamaño de la fuente */
+    }
+
+    #pantalla {
+        font-size: 1.5em; /* Reducimos el tamaño del texto en la pantalla */
+    }
+}
